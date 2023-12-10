@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,11 @@
 		03431DCC270290D200EB8D91 /* FormatadorDeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03431DCB270290D200EB8D91 /* FormatadorDeData.swift */; };
 		03431DD32703BD2B00EB8D91 /* SOL_Ponto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03431DD12703BD2B00EB8D91 /* SOL_Ponto.xcdatamodeld */; };
 		03E880B22704FC4400033A34 /* Recibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E880B12704FC4400033A34 /* Recibo.swift */; };
+		1268DAAE2B2531FA00318760 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1268DAAD2B2531FA00318760 /* Usuario.swift */; };
+		1268DAB32B2534BA00318760 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1268DAB22B2534BA00318760 /* LoginViewController.swift */; };
+		1268DAB72B2539C800318760 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1268DAB62B2539C800318760 /* LoginViewController.xib */; };
+		1268DABE2B254DF000318760 /* CadastroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1268DABD2B254DF000318760 /* CadastroViewController.xib */; };
+		1268DAC22B25522500318760 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1268DAC12B25522400318760 /* CadastroViewController.swift */; };
 		66DC2F932AD982A1008B4749 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC2F922AD982A1008B4749 /* Camera.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +44,11 @@
 		03431DCB270290D200EB8D91 /* FormatadorDeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatadorDeData.swift; sourceTree = "<group>"; };
 		03431DD22703BD2B00EB8D91 /* SOL_Ponto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SOL_Ponto.xcdatamodel; sourceTree = "<group>"; };
 		03E880B12704FC4400033A34 /* Recibo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recibo.swift; sourceTree = "<group>"; };
+		1268DAAD2B2531FA00318760 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		1268DAB22B2534BA00318760 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1268DAB62B2539C800318760 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		1268DABD2B254DF000318760 /* CadastroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CadastroViewController.xib; sourceTree = "<group>"; };
+		1268DAC12B25522400318760 /* CadastroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		66DC2F922AD982A1008B4749 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +82,8 @@
 		030EF1A426FBD61C000D3E42 /* SOL Ponto */ = {
 			isa = PBXGroup;
 			children = (
+				1268DAB82B254CEF00318760 /* Cadastro */,
+				1268DAAF2B25348900318760 /* Login */,
 				030EF1B926FBD69B000D3E42 /* AppDelegate */,
 				030EF1BC26FBD6B8000D3E42 /* Home */,
 				030EF1CF26FBE686000D3E42 /* Recibo */,
@@ -150,6 +162,7 @@
 				03E880B12704FC4400033A34 /* Recibo.swift */,
 				03431DCB270290D200EB8D91 /* FormatadorDeData.swift */,
 				66DC2F922AD982A1008B4749 /* Camera.swift */,
+				1268DAAD2B2531FA00318760 /* Usuario.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +182,56 @@
 				03431DD12703BD2B00EB8D91 /* SOL_Ponto.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		1268DAAF2B25348900318760 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1268DAB12B25349B00318760 /* Controller */,
+				1268DAB02B25349200318760 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1268DAB02B25349200318760 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1268DAB62B2539C800318760 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1268DAB12B25349B00318760 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1268DAB22B2534BA00318760 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1268DAB82B254CEF00318760 /* Cadastro */ = {
+			isa = PBXGroup;
+			children = (
+				1268DABA2B254D0C00318760 /* Controller */,
+				1268DAB92B254D0500318760 /* View */,
+			);
+			path = Cadastro;
+			sourceTree = "<group>";
+		};
+		1268DAB92B254D0500318760 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1268DABD2B254DF000318760 /* CadastroViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1268DABA2B254D0C00318760 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1268DAC12B25522400318760 /* CadastroViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +294,11 @@
 			files = (
 				030EF1CC26FBE62E000D3E42 /* ReciboViewController.xib in Resources */,
 				030EF1DA26FD2A13000D3E42 /* ReciboTableViewCell.xib in Resources */,
+				1268DAB72B2539C800318760 /* LoginViewController.xib in Resources */,
 				030EF1B226FBD61E000D3E42 /* LaunchScreen.storyboard in Resources */,
 				030EF1AF26FBD61E000D3E42 /* Assets.xcassets in Resources */,
 				030EF1C826FBE529000D3E42 /* HomeViewController.xib in Resources */,
+				1268DABE2B254DF000318760 /* CadastroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +313,13 @@
 				030EF1CB26FBE62E000D3E42 /* ReciboViewController.swift in Sources */,
 				03431DD32703BD2B00EB8D91 /* SOL_Ponto.xcdatamodeld in Sources */,
 				030EF1A626FBD61C000D3E42 /* AppDelegate.swift in Sources */,
+				1268DAC22B25522500318760 /* CadastroViewController.swift in Sources */,
 				030EF1A826FBD61C000D3E42 /* SceneDelegate.swift in Sources */,
 				66DC2F932AD982A1008B4749 /* Camera.swift in Sources */,
+				1268DAAE2B2531FA00318760 /* Usuario.swift in Sources */,
 				03431DCC270290D200EB8D91 /* FormatadorDeData.swift in Sources */,
 				03E880B22704FC4400033A34 /* Recibo.swift in Sources */,
+				1268DAB32B2534BA00318760 /* LoginViewController.swift in Sources */,
 				030EF1C726FBE529000D3E42 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

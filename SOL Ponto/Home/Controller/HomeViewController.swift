@@ -9,13 +9,13 @@ import UIKit
 import CoreData
 
 class HomeViewController: UIViewController {
-
+    
     // MARK: - IBOutlets
-
+    
     @IBOutlet weak var horarioView: UIView!
     @IBOutlet weak var horarioLabel: UILabel!
     @IBOutlet weak var registrarButton: UIButton!
-
+    
     // MARK: - Attributes
     
     private var timer: Timer?
@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
     }()
     
     // MARK: - View life cycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configuraView()
@@ -75,13 +75,28 @@ class HomeViewController: UIViewController {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             camera.delegate =  self
             camera.abrirCamera(self, controladorDeImagem)
-       }
+        }
     }
     // MARK: - IBActions
     
     @IBAction func registrarButton(_ sender: UIButton) {
-       tentaAbrirCamera()
+        tentaAbrirCamera()
+        
+    }
+    
+    @IBAction func onClickSwitch(_ sender: UISwitch){
+        if #available(iOS 13.0, *){
+            let appDelegate = UIApplication.shared.windows.first
             
+            if sender.isOn{
+                appDelegate?.overrideUserInterfaceStyle = .dark
+                return
+            }
+            
+            appDelegate?.overrideUserInterfaceStyle = .light
+        } else{
+            print("No support")
+        }
     }
 }
 

@@ -31,11 +31,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let reciboController = ReciboViewController()
         reciboController.tabBarItem = reciboTabItem
         
+        let loginController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        
+        let cadastroController = CadastroViewController()
+        
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [homeController, reciboController]
+        tabBarController.viewControllers = [homeController, reciboController, loginController, cadastroController]
         tabBarController.selectedViewController = homeController
         
-        window?.rootViewController = tabBarController
+        window?.rootViewController = loginController
         window?.makeKeyAndVisible()
     }
 
